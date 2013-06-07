@@ -1,7 +1,7 @@
 require "glysellin"
 
 module GlysellinAssociatedProducts
-  class Railtie < Rails::Railtie
+  class Engine < Rails::Engine
     initializer "include associated porudcts feature to Product model" do |app|
       app.config.to_prepare do
         ActiveSupport.on_load :active_record do
