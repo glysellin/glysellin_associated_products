@@ -7,6 +7,7 @@ module GlysellinAssociatedProducts
         ActiveSupport.on_load :active_record do
           Glysellin::Product.send(:include, Model)
         end
+        ApplicationController.helper(ApplicationHelper)
       end
     end
   end
