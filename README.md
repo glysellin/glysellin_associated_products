@@ -21,6 +21,6 @@ and render a list of associated products, with following params :
 ```
 
 The partial <tt>views/glysellin_asociated_products/shared/_associated_products.html.haml</tt> can be overridden with available locals : 
-- products : Array of Glysellin::Product
+- products : ActiveRecord::Relation
 
 
